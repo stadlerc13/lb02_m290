@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // test route
 app.get("/welcome", (req, res) => {
-  res.json({ message: "Welcome to ContactDB!" });
+  res.json({ message: "Willkommen zur ContactDB!" });
 });
 
 // add customer routes
