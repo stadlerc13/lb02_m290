@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/input-form.css" />
+    <title>Kontaktform</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Our contact form</h2>
+        <div class="form-control">
+          <label for="name">Vorname*</label>
+          <input type="text" id="name" placeholder="Vorname eingeben"/>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="lastname">Nachname*</label>
+          <input type="text" id="lastname" placeholder="Nachname eingeben"/>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="phone">Mobilenummer*</label>
+          <input type="tel" id="phone" name="phone" placeholder="+41 XX XXX XX XX">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="subject">Betreff*</label>
+          <input type="text" id="subject" name="subject" placeholder="Betreff">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="description">Beschreibung*</label>
+          <input type="text" id="description" name="description" placeholder="Beschreibung">
+          <small>Error message</small>
+        </div>
+        <!-- Aufgabe: Fügen Sie folgende Input-Elemente hinzu:
+          lastName, subject, description (textarea), phone
+        -->
+        <!-- Begin -->
+        <div class="form-control">
+          <label for="birthdate"> Geburtsdatum*</label>
+          <input type="date" id="birthdate" placeholder="Geburtsdatum eingeben">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Passwort eingeben" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="passwordcontrol">Passwort*</label>
+          <input type="password" id="passwordcontrol" placeholder="Passwort bestätigen"/>
+          <small>Error message</small>
+        </div>
+        <!-- Ende -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script/validate-inputs.js"></script>
+    <script src="script/network.js"></script>
+    <script src="script/ui.js"></script>
+  </body>
+</html>
