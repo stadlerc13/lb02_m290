@@ -92,7 +92,7 @@ function checkMobileNumber(id, input) {
         isNotValid: false,
         msg: showSuccess(id)
     }
-    const re = /^\+?([0-9]{2})\)?[-. ]?([0-9]{2})?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    const re = /^([0][1-9][0-9](\s|)[0-9][0-9][0-9](\s|)[0-9][0-9](\s|)[0-9][0-9])$|^(([0][0]|\+)[1-9][0-9](\s|)[0-9][0-9](\s|)[0-9][0-9][0-9](\s|)[0-9][0-9](\s|)[0-9][0-9])$/gm;
     if (!re.test(input.trim())) {
         result = {
             isNotValid: true,

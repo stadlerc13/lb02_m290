@@ -33,12 +33,13 @@ module.exports = class Customer {
     //Aufgabe: Lese einen einzelnen Kunden anhand der ID aus
     //--Begin
     findById(id, cbResult) {
-        sql.query(`--??`, id, (err, result) => {
+        sql.query(`select * from customer where id= ?`, id, (err, result) => {
             if (err) {
-                //??
-                //??
-                //??
+                console.log("error: ", err);
+                cbResult(err, null);
+                return;
             }
+
 
             //result of the select (greater than 0) has found a record (Tupel)
             if (result.length) {
@@ -48,7 +49,8 @@ module.exports = class Customer {
             }
 
             // not found Customer with the id
-            //??
+            console.log("select customer by ID", {id: id});
+            cbResult(null, {id: id});
         });
     };
     //--End
@@ -114,7 +116,7 @@ module.exports = class Customer {
      */
     //Aufgabe: Einzelnen Kunden anhand der ID löschen
     //--Begin
-    remove(id, cbResult) {
+    removeById(id, cbResult) {
         sql.query("--??", id, (err, result) => {
             if (err) {
                 //??

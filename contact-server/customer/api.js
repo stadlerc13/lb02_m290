@@ -11,7 +11,7 @@ module.exports = app => {
   //Aufgabe: REST-API, um EINEN Kunden anhand der ID auszugeben
   //--Begin
   // Retrieve a single Customer with login id
-
+ app.get("/customer/:id", customer.findOne);
   //--End
 
   // Update a Customer with customerId
@@ -21,14 +21,14 @@ module.exports = app => {
   //Aufgabe: REST-API, um EINEN Kunden anhand der ID zu löschen
   //--Begin
   // Delete a Customer with customerId
-
+    app.get("/customer/:id", customer.remove);
   //--End
 
 
   //Aufgabe: REST-API, um alle Kunden zu löschen
   //--Begin
   // delete all customers
-
+    app.get("/customer/:id", customer.removeAll);
   //--End
 
 };

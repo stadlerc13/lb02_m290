@@ -31,10 +31,15 @@ function validateFormData(data) {
         return result;
     }
 
+    result = validateLib.checkRequired("subject", data.subject);
+    if (result.isNotValid) {
+        return result;
+    }
     result = validateLib.checkRequired("description", data.description);
     if (result.isNotValid) {
         return result;
     }
+
 
     //--End
 

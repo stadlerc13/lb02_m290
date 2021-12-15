@@ -64,7 +64,21 @@ function findAll(req, res){
 //Aufgabe: Lese einen einzelnen Kunden anhand der ID aus
 //--Begin
 function findOne(req, res){
-
+  customerObj.findById(req.params.id,
+      (err, result) => {
+        if (err) {
+          if (err.kind === "not_found") {
+            res.status(HTTP_STATUS.NOT_FOUND).send({
+              message: `Not found Customer with id ${req.params.id}.`
+            });
+          } else {
+            res.status(HTTP_STATUS.SERVER_ERROR).send({
+              message: `Error finding Customer with id ${req.params.id}.`
+            });
+          }
+        } else res.send(result);
+      }
+  );
 }
 //--End
 
@@ -99,8 +113,22 @@ function update(req, res){
 
 //Aufgabe: Einzelnen Kunden anhand der ID löschen
 //--Begin
-function remove(req,res){
-
+function remove(req, res){
+  customerObj.removeById(req.params.id,
+      (err, result) => {
+        if (err) {
+          if (err.kind === "not_found") {
+            res.status(HTTP_STATUS.NOT_FOUND).send({
+              message: `Not found Customer with id ${req.params.id}.`
+            });
+          } else {
+            res.status(HTTP_STATUS.SERVER_ERROR).send({
+              message: `Error finding Customer with id ${req.params.id}.`
+            });
+          }
+        } else res.send(result);
+      }
+  );
 }
 //--End
 
@@ -121,6 +149,8 @@ function removeAll(req, res){
 module.exports = {
   create,
   findAll,
-  update
+  update,
+  findOne,
+  remove
 }
 //--End
