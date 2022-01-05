@@ -135,6 +135,14 @@ function remove(req, res){
 //Aufgabe: Alle Kunden löschen
 //--Begin
 function removeAll(req, res){
+  customerObj.removeAll((err, result) => {
+    if (err)
+      res.status(HTTP_STATUS.SERVER_ERROR).send({
+        message:
+            err.message || "Some error occurred while retrieving customers."
+      });
+    else res.send(result);
+  });
 
 }
 //--End
@@ -151,6 +159,7 @@ module.exports = {
   findAll,
   update,
   findOne,
-  remove
+  remove,
+  removeAll
 }
 //--End

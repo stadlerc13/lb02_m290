@@ -81,14 +81,14 @@ module.exports = class Customer {
      * @param customer: customer object literal
      * @param cbResult: result of sql statement
      */
-    updateById(id, customer, cbResult) {
+        updateById(id, customer, cbResult) {
         //Aufgabe: Update der Attribute lastName, subject, description, phone
         //--Begin
-        let queryString = 'UPDATE customer SET email = ?, firstName = ?';
+        let queryString = 'UPDATE customer SET email = ?, firstName = ?, lastName = ?, subject = ?, description = ?, phone = ?';
         queryString += ' WHERE id = ?';
         //--End
         sql.query(queryString,
-            [customer.email, customer.firstName, parseInt(id)],
+            [customer.email, customer.firstName, customer.lastName, customer.subject, customer.description, customer.phone, parseInt(id)],
             (err, result) => {
                 if (err){
                     console.log("error: ", err);
@@ -117,24 +117,27 @@ module.exports = class Customer {
     //Aufgabe: Einzelnen Kunden anhand der ID löschen
     //--Begin
     removeById(id, cbResult) {
-        sql.query("--??", id, (err, result) => {
+        sql.query(`delete from customer where id= ?`, id, (err, result) => {
             if (err) {
-                //??
-                //??
-                //??
+                console.log("error: ", err);
+                cbResult(err, null);
+                return;
             }
 
             if (result.affectedRows === 0) {
                 // not found Customer with the id
-                //??
-                //??
+                cbResult({kind: "not_found"}, null);
+                return;
             }
 
-            console.log("deleted customer with id: ", id);
-            //??
+            console.log("delete customer by ID", {id: id});
+            cbResult(null, {msg: "Customer has been deleted", id: id});
         });
     }
     //--End
+
+
+
 
     /**
      * Remove all customers
@@ -143,16 +146,19 @@ module.exports = class Customer {
     //Aufgabe: Alle Kunden löschen
     //--Begin
     removeAll(cbResult) {
-        sql.query("--??", (err, result) => {
+    sql.query('delete FROM customer', (err,result) => {
             if (err) {
-                //??
-                //??
-                //??
+                console.log("error: ", err);
+                //err zurückgeben, data = null
+                cbResult(err, null);
+                return;
             }
 
             console.log(`deleted ${result.affectedRows} customer`);
-            //??
+            cbResult(null, result);
         });
     }
+
+
 }
 

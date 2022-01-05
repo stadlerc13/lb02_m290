@@ -21,14 +21,14 @@ module.exports = app => {
   //Aufgabe: REST-API, um EINEN Kunden anhand der ID zu löschen
   //--Begin
   // Delete a Customer with customerId
-    app.get("/customer/:id", customer.remove);
+    app.delete("/customer/:id", customer.remove);
   //--End
 
 
   //Aufgabe: REST-API, um alle Kunden zu löschen
   //--Begin
   // delete all customers
-    app.get("/customer/:id", customer.removeAll);
+    app.delete("/customers", customer.removeAll);
   //--End
 
 };
