@@ -3,16 +3,13 @@ let ALL_INPUT_VALID;
 
 //reading fields from input form
 const form = document.getElementById('form');
-const name = document.getElementById('name');
-const lastname = document.getElementById('lastname');
-const username = document.getElementById('username');
+const firstName = document.getElementById('firstName');
+const lastName = document.getElementById('lastName');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
 const subject = document.getElementById('subject');
 const description = document.getElementById('description');
-const password = document.getElementById('password');
-const passwordcontrol = document.getElementById('passwordcontrol');
-const birthdate = document.getElementById('birthdate');
+
 /* Aufgabe: Lesen Sie folgende Input-Elemente aus:
   lastName, subject, description (textarea), phone
 */
@@ -50,7 +47,7 @@ function checkRequired(inputArr) {
   let isRequired = false;
   inputArr.forEach(function(input) {
     if (input.value.trim() === '') {
-      showError(input, `${getFieldName(input)} is required`);
+      showError(input, `Diese Eingabe wird benötigt`);
       isRequired = true;
       ALL_INPUT_VALID = false;
     } else {
@@ -97,17 +94,7 @@ function checkPhone(input) {
   }
 }
 //--End
-// Check passwords match
-function checkPasswordMatch(input1, input2) {
-  let pwd1 = input1.value.trim();
-  let pwd2 = input2.value.trim();
-  if (pwd1 === pwd2) {
-    showSuccess(input2);
-  } else {
-    showError(input2, 'Zweites Passwort stimmt nicht überein');
-    ALL_INPUT_VALID = false;
-  }
-}
+
 
 /**
  * Get fieldname
@@ -126,13 +113,11 @@ function getFieldName(input) {
 */
 //--Begin
 function validateForm(){
-  if(!checkRequired([name, lastname, username, email, phone, birthdate, description, password, passwordcontrol])){
-    checkLength(name, 3, 20);
-    checkLength(lastname, 3, 30);
-    checkLength(password, 6, 25);
+  if(!checkRequired([firstName, lastName, email, phone, subject, description])){
+    checkLength(firstName, 3, 20);
+    checkLength(lastName, 3, 30);
     checkEmail(email);
     checkPhone(phone);
-    checkPasswordMatch(password, passwordcontrol);
   }
 }
 //--End
@@ -141,10 +126,10 @@ function validateForm(){
  * Make a testcall after the page is loaded
  */
 window.onload = () => {
-  console.log(`Make test call to the server ...`);
+  console.log(`Es wird einen Testcall zum Server gemacht...`);
   getWelcome().then(
       result => {
-        console.log(`Response from server: ${result}`);
+        console.log(`Antwort des Servers: ${result}`);
       },
       error => {
         console.log(error)
@@ -171,19 +156,16 @@ form.addEventListener('submit', function(e) {
     */
     //--Begin
     let formData = {
-        name: name.value,
-        lastname: lastname.value,
+        firstName: firstName.value,
+        lastName: lastName.value,
         email: email.value,
         phone: phone.value,
         subject: subject.value,
-        description: description.value,
-        password: password.value,
-        passwordcontrol: passwordcontrol.value
-
+        description: description.value
       }
     //--End
 
-    console.log(`All input is valid. Send data to server: 
+    console.log(`Alle Eingaben sind korrekt. Daten werden an Server gesendet: 
       ${JSON.stringify(formData)}`);
 
     //Variant 1
@@ -192,7 +174,7 @@ form.addEventListener('submit', function(e) {
     //Variant 2
     sendForm2(formData).then(
         result => {
-          console.log(`Response from server: ${result}`);
+          console.log(`Antwort des Servers: ${result}`);
           window.location.href = './confirm.html';
         },
         error => {
@@ -202,7 +184,7 @@ form.addEventListener('submit', function(e) {
 
 
   } else {
-    console.log("At least one validation failed. No data sent to contact-server.")
+    console.log("Mindestens eine Validierung hat nicht funktioniert. Es wurden keine Daten an den Server übermittelt.")
   }
 
 });
