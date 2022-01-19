@@ -62,12 +62,12 @@ function checkRequired(inputArr) {
 function checkLength(input, min, max) {
   if (input.value.length < min) {
     showError(input,
-        `${getFieldName(input)} muss mindestens ${min} Zeichen lang sein`
+        `Diese Eingabe muss mindestens ${min} Zeichen lang sein`
     );
     ALL_INPUT_VALID = false;
   } else if (input.value.length > max) {
     showError(input,
-        `${getFieldName(input)} darf maximal ${max} Zeichen lang sein`
+        `Diese Eingabe darf maximal ${max} Zeichen lang sein`
     );
     ALL_INPUT_VALID = false;
   } else {

@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ca41995-f776-4824-9f06-c00f62582c0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contact-client/images/bridge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact-client/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact-client/images/festival.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-client/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/confirm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-client/script/validate-inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/script/validate-inputs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-client/style/input-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/style/input-form.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,11 +96,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:MySQL - @localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - @localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@3d2506c1" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -122,6 +121,9 @@
       <workItem from="1641297868222" duration="2315000" />
       <workItem from="1641375386423" duration="6465000" />
       <workItem from="1641844172076" duration="2831000" />
+      <workItem from="1641847045293" duration="107000" />
+      <workItem from="1641980153480" duration="5390000" />
+      <workItem from="1642586209341" duration="961000" />
     </task>
     <task id="LOCAL-00001" summary="zweiter Commit&#10;Node module neu installiert&#10;Code geändert">
       <created>1639514889003</created>
@@ -144,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641380567460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fünfter Commit&#10;Client mit Server verbunden">
+      <created>1641847085400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641847085400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,48 +164,49 @@
     <MESSAGE value="zweiter Commit&#10;Node module neu installiert&#10;Code geändert" />
     <MESSAGE value="dritter Commit&#10;Rest Api angefangen" />
     <MESSAGE value="vierter Commit&#10;Rest Api abgeschlossen" />
-    <option name="LAST_COMMIT_MESSAGE" value="vierter Commit&#10;Rest Api abgeschlossen" />
+    <MESSAGE value="fünfter Commit&#10;Client mit Server verbunden" />
+    <option name="LAST_COMMIT_MESSAGE" value="fünfter Commit&#10;Client mit Server verbunden" />
   </component>
   <component name="WindowStateProjectService">
     <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641846038665">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641846038665" />
-    <state x="539" y="115" key="CommitChangelistDialog2" timestamp="1641380566700">
+    <state x="539" y="115" key="CommitChangelistDialog2" timestamp="1641847084254">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1641380566700" />
+    <state x="539" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1641847084254" />
     <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1641298345965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641298345965" />
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1641847027966">
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1641985587868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641847027966" />
-    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1641847027966">
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
+    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1641985587868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641847027966" />
-    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1641847027966">
+    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
+    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1641985587868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641847027966" />
-    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1641847027966">
+    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1641985587868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641847027966" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1641380582341">
+    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1641847102301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1641380582341" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1638957805393">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1641847102301" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1641982946425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1638957805393" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638957808547">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641982946425" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641983035074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1638957808547" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641983035074" />
   </component>
 </project>

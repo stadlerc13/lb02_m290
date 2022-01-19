@@ -1,58 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style/input-form.css" />
-    <title>Kontaktform</title>
-  </head>
-  <body>
-    <div class="container">
-      <form id="form" class="form">
-        <h2>Our contact form</h2>
-        <div class="form-control">
-          <label for="firstName">Vorname*</label>
-          <input type="text" id="firstName" placeholder="Vorname eingeben"/>
-          <small>Error message</small>
-        </div>
-
-        <!-- Aufgabe: Fügen Sie folgende Input-Elemente hinzu:
-          lastName, subject, description (textarea), phone
-        -->
-        <!-- Begin -->
-        <div class="form-control">
-          <label for="lastName">Nachname*</label>
-          <input type="text" id="lastName" placeholder="Nachname eingeben"/>
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Enter email" />
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="phone">Mobilenummer*</label>
-          <input type="tel" id="phone" name="phone" placeholder="+41 XX XXX XX XX">
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="subject">Betreff*</label>
-          <input type="text" id="subject" name="subject" placeholder="Betreff">
-          <small>Error message</small>
-        </div>
-        <div class="form-control">
-          <label for="description">Beschreibung*</label>
-          <input type="text" id="description" name="description" placeholder="Beschreibung">
-          <small>Error message</small>
-        </div>
-        <!-- Ende -->
-        <button type="submit">Submit</button>
-      </form>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="style/input-form.css"/>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+    <title>Offiziele Seite Linth OpenAir</title>
+</head>
+<body>
+<diV class="anordnung">
+    <div class="nav">
+        <ul>
+            <li><a href="contact.html">| Kontakt |</a></li>
+        </ul>
     </div>
 
-    <script src="script/validate-inputs.js"></script>
-    <script src="script/network.js"></script>
-    <script src="script/ui.js"></script>
-  </body>
+    <h1> Wilkommen zur offiziellen Seite des Linth OpenAir</h1>
+
+    <div class="textblock">
+        <div class="textblockweiss">
+            <h3>Alle aufgepasst</h3>
+            <p>
+                Summer vibes in coming! Mit cooler Location, lokalen Künstlern und tollen Foodtrucks geniessen wir auch
+                dieses Jahr das populäre Linth OpenAir.
+                Festivalliebhaber aus der ganzen Schweiz sind herzlich eingeladen mit uns zu feiern.
+            </p></div>
+
+
+        <div class="textblockweiss">
+            <h3>Anmedlung</h3>
+            <p>Das Linth OpenAir findet vom 22. Juli bis am 25. Juli 2022 an der Linth bei der Grynau SZ statt.
+                Die Tickets werden ab 1. März im Vorverkauf erhältlich sein.
+            </p>
+        </div>
+
+        <div class="textblockweiss">
+            <h3>Künstler</h3>
+            <p>
+                DJ Mosfje, 20
+                <br>
+                Mit seinem frechen DJ Style begeister er alle Zushörer. Er stammt ursprünglich aus Russland, was man an
+                seiner temperamenten Art sieht.
+                Seit kleinauf ist er Interessiert an der Musik.
+                <br>
+                <br>
+                Danja Martyns, 35
+                <br>
+                Unsere Deutschrapperin freut sich schon ihre neues Album zum ersten Mal vor dem Publikum zu singen.
+            </p>
+        </div>
+        <div class="textblockweiss">
+            <h3>Kontakt</h3>
+            <p>Wir stehen euch bei Fragen und Unklarheiten gerne zur Verfügung. Dafür bitten wir euch, dieses
+                Kontaktformular auszufüllen. Wir werden uns so bald wie möglich melden.
+            </p>
+            <a href="contact.html" class="anmeldebutton">Zum Kontaktformular</a>
+        </div>
+
+
+        <div class="textblockweiss">
+            <h3>Anreise</h3>
+            <p>
+                ÖV: Mit dem Zug nach Uznach und dann den 521 Bus Richtung Reichenburg nehmen. Alle 30min fahrt ein Bus.
+                Es werden je nach Teilnehmeranzahl, Extrabusse fahren.
+            </p>
+        </div>
+    </div>
+
+</diV>
+<footer>
+
+</footer>
+<script src="script/validate-inputs.js"></script>
+</body>
 </html>
