@@ -8,15 +8,15 @@ const SERVER = 'http://localhost:3000';
  * @returns {Promise<string>}
  */
 function getWelcome() {
-  return fetch(SERVER+'/welcome')
-      /* important is res.text().
-            res.json() returns errors because the answer from
-            the contact-server is NOT in JSON-format.
-        */
-      .then(res => res.text())
-      .catch(err => {
-        console.log(`Error occurred: ${err}`)
-      });
+    return fetch(SERVER + '/welcome')
+        /* important is res.text().
+              res.json() returns errors because the answer from
+              the contact-server is NOT in JSON-format.
+          */
+        .then(res => res.text())
+        .catch(err => {
+            console.log(`Error occurred: ${err}`)
+        });
 }
 
 /**
@@ -26,8 +26,8 @@ function getWelcome() {
  * @param data
  * @returns {Promise<Response>}
  */
-function sendForm1(data){
-    return fetch(SERVER+'/customer/', {
+function sendForm1(data) {
+    return fetch(SERVER + '/customer/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ function sendForm1(data){
  */
 function sendForm2(data) {
     //DO NOT FORGET the return!
-    return fetch(SERVER+'/customer', {
+    return fetch(SERVER + '/customer', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

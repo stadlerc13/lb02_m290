@@ -53,6 +53,7 @@ module.exports = class Customer {
             cbResult(null, {id: id});
         });
     };
+
     //--End
 
 
@@ -60,9 +61,9 @@ module.exports = class Customer {
      * Get all customers
      * @param cbResult: result of sql statement
      */
-    getAll(cbResult){
-        sql.query('SELECT * FROM customer', (err,result) => {
-            if (err){
+    getAll(cbResult) {
+        sql.query('SELECT * FROM customer', (err, result) => {
+            if (err) {
                 console.log("error: ", err);
                 //err zurückgeben, data = null
                 cbResult(err, null);
@@ -81,7 +82,7 @@ module.exports = class Customer {
      * @param customer: customer object literal
      * @param cbResult: result of sql statement
      */
-        updateById(id, customer, cbResult) {
+    updateById(id, customer, cbResult) {
         //Aufgabe: Update der Attribute lastName, subject, description, phone
         //--Begin
         let queryString = 'UPDATE customer SET email = ?, firstName = ?, lastName = ?, subject = ?, description = ?, phone = ?';
@@ -90,7 +91,7 @@ module.exports = class Customer {
         sql.query(queryString,
             [customer.email, customer.firstName, customer.lastName, customer.subject, customer.description, customer.phone, parseInt(id)],
             (err, result) => {
-                if (err){
+                if (err) {
                     console.log("error: ", err);
                     //err zurückgeben, data = null
                     cbResult(err, null);
@@ -134,9 +135,8 @@ module.exports = class Customer {
             cbResult(null, {msg: "Customer has been deleted", id: id});
         });
     }
+
     //--End
-
-
 
 
     /**
@@ -146,7 +146,7 @@ module.exports = class Customer {
     //Aufgabe: Alle Kunden löschen
     //--Begin
     removeAll(cbResult) {
-    sql.query('delete FROM customer', (err,result) => {
+        sql.query('delete FROM customer', (err, result) => {
             if (err) {
                 console.log("error: ", err);
                 //err zurückgeben, data = null

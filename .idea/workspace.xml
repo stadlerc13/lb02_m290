@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ca41995-f776-4824-9f06-c00f62582c0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contact-client/images/bridge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-client/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact-client/images/festival.jpg" afterDir="false" />
+    <list default="true" id="0ca41995-f776-4824-9f06-c00f62582c0e" name="Default Changelist" comment="sechster Commit&#10;index seite hinzugefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-client/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-client/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-client/script/network.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/script/network.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-client/script/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/script/ui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-client/script/validate-inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/script/validate-inputs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-client/style/input-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/style/input-form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-server/ValidationLib.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/ValidationLib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-server/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/config/db.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-server/customer/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/customer/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-server/customer/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/customer/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-server/customer/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/customer/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-server/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contactdb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/contactdb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +79,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/M290_Code-main/08_Webapp_Backend_mit_Datenbank_verbinden/02_Exercises/contact-server/customer/model.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/contactdb_customer.sql" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -123,7 +131,11 @@
       <workItem from="1641844172076" duration="2831000" />
       <workItem from="1641847045293" duration="107000" />
       <workItem from="1641980153480" duration="5390000" />
-      <workItem from="1642586209341" duration="961000" />
+      <workItem from="1642586209341" duration="4038000" />
+      <workItem from="1642592891111" duration="1815000" />
+      <workItem from="1642600297394" duration="315000" />
+      <workItem from="1642601390503" duration="612000" />
+      <workItem from="1642780223886" duration="1796000" />
     </task>
     <task id="LOCAL-00001" summary="zweiter Commit&#10;Node module neu installiert&#10;Code geändert">
       <created>1639514889003</created>
@@ -153,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641847085400</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sechster Commit&#10;index seite hinzugefügt">
+      <created>1642587265631</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642587265631</updated>
+    </task>
+    <task id="LOCAL-00006" summary="sechster Commit&#10;contact seite hinzugefügt">
+      <created>1642587365297</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642587365297</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,41 +191,47 @@
     <MESSAGE value="dritter Commit&#10;Rest Api angefangen" />
     <MESSAGE value="vierter Commit&#10;Rest Api abgeschlossen" />
     <MESSAGE value="fünfter Commit&#10;Client mit Server verbunden" />
-    <option name="LAST_COMMIT_MESSAGE" value="fünfter Commit&#10;Client mit Server verbunden" />
+    <MESSAGE value="sechster Commit&#10;index seite hinzugefügt" />
+    <MESSAGE value="sechster Commit&#10;contact seite hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="sechster Commit&#10;contact seite hinzugefügt" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641846038665">
+    <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642593907315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1641846038665" />
-    <state x="539" y="115" key="CommitChangelistDialog2" timestamp="1641847084254">
+    <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1642593907315" />
+    <state x="539" y="115" key="CommitChangelistDialog2" timestamp="1642588984339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1641847084254" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1641298345965">
+    <state x="539" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1642588984339" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1642593048856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641298345965" />
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1641985587868">
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1642593048856" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1642780513986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
-    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1641985587868">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642780513986" />
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1642594721958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
-    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1641985587868">
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721958" />
+    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1642594721958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
-    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1641985587868">
+    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721958" />
+    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1642594721957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641985587868" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1641847102301">
+    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721957" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1642594721958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1641847102301" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721958" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1642587371140">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1642587371140" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1641982946425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

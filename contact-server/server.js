@@ -21,16 +21,15 @@ console.log(`Running at Port ${port}`);
 server.timeout = 1000 * 60 * 2; // 2 minutes
 
 
-
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 
 // test route
 app.get("/welcome", (req, res) => {
-  res.json({ message: "Willkommen zur ContactDB!" });
+    res.json({message: "Willkommen zur ContactDB!"});
 });
 
 // add customer routes

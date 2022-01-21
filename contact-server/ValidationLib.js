@@ -16,7 +16,7 @@ function showSuccess(id) {
 }
 
 // Check email is valid
-function checkEmail(id,input) {
+function checkEmail(id, input) {
     //Default: is valid
     let result = {
         isNotValid: false,
@@ -65,7 +65,7 @@ function checkLength(id, input, min, max) {
         result = {
             isNotValid: true,
             msg: showError(id,
-            `${id} must be at least ${min} characters`)
+                `${id} must be at least ${min} characters`)
         }
     } else if (input.length > max) {
         result = {
@@ -85,6 +85,7 @@ function checkLength(id, input, min, max) {
     im Internet nach "javascript regular expression for mobile number".
     https://www.w3resource.com/javascript/form/phone-no-validation.php
 */
+
 //--Begin
 function checkMobileNumber(id, input) {
     //Default: is valid
@@ -101,8 +102,8 @@ function checkMobileNumber(id, input) {
     }
     return result;
 }
-//--End
 
+//--End
 
 
 /**
