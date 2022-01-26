@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ca41995-f776-4824-9f06-c00f62582c0e" name="Default Changelist" comment="sechster Commit&#10;index seite hinzugefügt">
+    <list default="true" id="0ca41995-f776-4824-9f06-c00f62582c0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/contactdb_customer.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-client/confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-client/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-client/script/network.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/script/network.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-client/script/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/script/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-client/script/validate-inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/script/validate-inputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-client/style/input-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/contact-client/style/input-form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-server/ValidationLib.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/ValidationLib.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-server/config/db.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/config/db.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-server/customer/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/customer/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-server/customer/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/customer/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact-server/customer/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/customer/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-server/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/contact-server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contactdb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/contactdb.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +123,9 @@
       <workItem from="1642592891111" duration="1815000" />
       <workItem from="1642600297394" duration="315000" />
       <workItem from="1642601390503" duration="612000" />
-      <workItem from="1642780223886" duration="1796000" />
+      <workItem from="1642780223886" duration="1935000" />
+      <workItem from="1642850170118" duration="3367000" />
+      <workItem from="1643190889190" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="zweiter Commit&#10;Node module neu installiert&#10;Code geändert">
       <created>1639514889003</created>
@@ -179,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642587365297</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="siebter Commit&#10;alle Codes reformated">
+      <created>1642800967251</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642800967251</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,45 +190,46 @@
     <MESSAGE value="fünfter Commit&#10;Client mit Server verbunden" />
     <MESSAGE value="sechster Commit&#10;index seite hinzugefügt" />
     <MESSAGE value="sechster Commit&#10;contact seite hinzugefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="sechster Commit&#10;contact seite hinzugefügt" />
+    <MESSAGE value="siebter Commit&#10;alle Codes reformated" />
+    <option name="LAST_COMMIT_MESSAGE" value="siebter Commit&#10;alle Codes reformated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642593907315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="542" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1642593907315" />
-    <state x="539" y="115" key="CommitChangelistDialog2" timestamp="1642588984339">
+    <state x="539" y="115" key="CommitChangelistDialog2" timestamp="1642800966346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1642588984339" />
+    <state x="539" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1642800966346" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1642593048856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040@0.0.1920.1040" timestamp="1642593048856" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1642780513986">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1642853204804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642780513986" />
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1642594721958">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642853204804" />
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1642853703608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721958" />
-    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1642594721958">
+    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642853703608" />
+    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1642853703608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721958" />
-    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1642594721957">
+    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642853703608" />
+    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1642853703608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721957" />
-    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1642594721958">
+    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642853703608" />
+    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1642853703608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642594721958" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1642587371140">
+    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642853703608" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1642800979452">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1642587371140" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1642800979452" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1641982946425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

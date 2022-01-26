@@ -20,7 +20,7 @@ module.exports = class Customer {
 
             console.log("created contact: ", {id: res.insertId, ...newCustomer});
             cbResult(null,
-                {msg: "New Contact from has been inserted!", id: res.insertId, ...newCustomer});
+                {msg: "New Contact has been inserted!", id: res.insertId, ...newCustomer});
         });
     }
 

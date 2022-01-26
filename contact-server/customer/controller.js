@@ -43,7 +43,7 @@ function create(req, res) {
                 });
             else res.status(HTTP_STATUS.SUCCESSFUL_CREATED).send(result);
             //or
-            //else res.status(201).send(`New Contact from ${data.email} has been inserted!`);
+            //else res.status(201).send(`New Contact has been inserted!`);
         });
     }
 }
